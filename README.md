@@ -4,7 +4,7 @@
 I chose to use Luxon for this project instead of Moment because Moment is depricated and I wanted to learn how to use something current. In this project I took the starter code provided and added the current date to the header. I then figured out how to apply classes to eat hour of the work day depending on whether that time was in the past, present or future. Once that was done, I added the save emoji and had the input fields persist in local storage. 
 
 #Link to live site
-
+https://elangworth.github.io/Work-Day-Scheduler/
 
 #User Story
 AS AN employee with a busy schedule
