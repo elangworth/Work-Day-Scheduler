@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -18,7 +17,6 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -28,11 +26,95 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
+    <div class="container rounded" id="calendar-hours">
       <!-- Timeblocks go here -->
-    </div>
-
+      <div class="row">
+        <div class="col-12 border border-2 border-dark p-2" id="eight"> 
+          <div>
+            <form class="d-flex justify-content-between">
+              <div class="text-dark p-2">8:00</div> 
+              <input type="text" name="event" id="eight-event" class="input w-75 p-1">
+              <button class="p-2 m-2" id="eight-submit-button">&#128190</button>
+            </form> 
+        </div>
+      </div>
+        <div class="col-12 border border-2 border-dark p-2" id="nine">
+          <div>
+            <form class="d-flex justify-content-between">
+              <div class="text-dark p-2">9:00</div> 
+              <input type="text" name="event" id="nine-event" class="input w-75 p-1">
+              <button class="p-2 m-2" id="nine-submit-button">&#128190</button>
+            </form> 
+          </div>
+        </div>
+        <div class="col-12 border border-2 border-dark p-2" id="ten">
+          <div>
+            <form class="d-flex justify-content-between">
+              <div class="text-dark p-2">10:00</div> 
+              <input type="text" name="event" id="ten-event" class="input w-75 p-1">
+              <button class="p-2 m-2" id="nine-submit-button">&#128190</button>
+            </form> 
+          </div>
+        </div>
+        <div class="col-12 border border-2 border-dark p-2" id="eleven">
+          <div>
+            <form class="d-flex justify-content-between">
+              <div class="text-dark p-2">11:00</div> 
+              <input type="text" name="event" id="eleven-event" class="input w-75 p-1">
+              <button class="p-2 m-2" id="eleven-submit-button">&#128190</button>
+            </form> 
+         </div>
+        </div>
+        <div class="col-12 border border-2 border-dark p-2" id="twelve">
+          <div>
+            <form class="d-flex justify-content-between">
+              <div class="text-dark p-2">12:00</div> 
+              <input type="text" name="event" id="twelve-event" class="input w-75 p-1">
+              <button class="p-2 m-2" id="twelve-submit-button">&#128190</button>
+            </form> 
+          </div>
+        </div>
+        <div class="col-12 border border-2 border-dark p-2" id="thirteen">
+          <div>
+            <form class="d-flex justify-content-between">
+              <div class="text-dark p-2">13:00</div> 
+              <input type="text" name="event" id="thirteen-event" class="input w-75 p-1">
+              <button class="p-2 m-2" id="thirteen-submit-button">&#128190</button>
+            </form> 
+          </div>
+        </div>
+        <div class="col-12 border border-2 border-dark p-2" id="fourteen">
+          <div>
+            <form class="d-flex justify-content-between">
+              <div class="text-dark p-2">14:00</div> 
+              <input type="text" name="event" id="fourteen-event" class="input w-75 p-1">
+              <button class="p-2 m-2" id="fourteen-submit-button">&#128190</button>
+            </form> 
+          </div>
+        </div>
+        <div class="col-12 border border-2 border-dark p-2" id="fifteen">
+          <div>
+            <form class="d-flex justify-content-between">
+              <div class="text-dark p-2">15:00</div> 
+              <input type="text" name="event" id="fifteen-event" class="input w-75 p-1">
+              <button class="p-2 m-2" id="fifteen-submit-button">&#128190</button>
+            </form> 
+          </div>
+        </div>
+        <div class="col-12 border border-2 border-dark p-2" id="sixteen">
+          <div>
+            <form class="d-flex justify-content-between">
+              <div class="text-dark p-2">16:00</div> 
+              <input type="text" name="event" id="sixteen-event" class="input w-75 p-1">
+              <button class="p-2 m-2" id="sixteen-submit-button">&#128190</button>
+            </form> 
+        </div>
+        </div>
+      </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
+    <script src="assets/js/script.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
